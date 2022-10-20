@@ -12,3 +12,6 @@ diagrams/
 *.pptx
 sap-btp-icon-collection/
 .DS_Store
+build
+*/webapp/*
+*/webapp/xs-app.json
