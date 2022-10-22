@@ -1,5 +1,5 @@
 {
-    "xsappname": "html5_approuter",
+    "xsappname": "html5_approuter-webcomp",
     "tenant-mode": "dedicated",
     "description": "Security profile of called application",
     "scopes": [

@@ -12,7 +12,7 @@ modules:
     requires:
       - name: html5_repo_runtime
       - name: html5_destination
-      - name: html5_uaa
+      - name: html5_approuter-webcomp
   - name: ui5webcomponents
     type: html5
     path: ui5webcomponents
@@ -54,7 +54,7 @@ resources:
     parameters:
       service-plan: lite
       service: destination
-  - name: html5_uaa
+  - name: html5_approuter-webcomp
     parameters:
       path: ./xs-security.json
       service-plan: application
