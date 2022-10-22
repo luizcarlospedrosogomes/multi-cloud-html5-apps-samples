@@ -8,7 +8,8 @@ export const ROUTES = {
   NOT_FOUND: '/notFound',
   BUGGY: '/buggy',
   ANY: '/*',
-  PLANET_LIST:'/planets'
+  PLANET_LIST:'/planets',
+  RESIDENTS_LIST:'/planets/:id/residents'
 };
 
 /**

@@ -2,7 +2,7 @@ import { useQuery } from 'react-query';
 
 import Request from '../../api/Request';
 
-export const usePlanets = (page) => {
+export const usePlanet = (page) => {
   return useQuery(
     ['all-planets', page],
     async () => {
@@ -19,9 +19,9 @@ export const usePlanets = (page) => {
   );
 };
 
-export const usePlanet = (id) => {
+export const useTodo = (id) => {
   return useQuery(['planets', id], async () => {
-    const { data } = await Request.get(`/planets/${id}`);
+    const { data } = await Request.get(`/planets${id}`);
     return data;
   });
 };

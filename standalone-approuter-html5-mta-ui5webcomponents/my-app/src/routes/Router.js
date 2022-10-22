@@ -9,15 +9,14 @@ const TodoEdit = lazy(() => import('../pages/Todo/Edit/TodoEdit'));
 const NotFound = lazy(() => import('../pages/Fallback/NotFound'));
 const Buggy = lazy(() => import('../pages/Fallback/Buggy'));
 const PlanetList = lazy(() => import('../pages/Planet/List'));
+const ResidentsList = lazy(() => import('../pages/Residents/List'));
 
 const Router = () => {
   return (
     <Suspense fallback={<BusyIndicator active />}>
       <Routes>
-        <Route
-          path={ROUTES.PLANET_LIST}
-          element={<PlanetList />}
-        />
+        <Route path={ROUTES.PLANET_LIST}  element={<PlanetList />} />
+        <Route path={ROUTES.RESIDENTS_LIST}  element={<ResidentsList />} />
         <Route path={ROUTES.BUGGY} element={<Buggy />} />
         <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
         <Route path={ROUTES.ANY} element={<NotFound />} />
