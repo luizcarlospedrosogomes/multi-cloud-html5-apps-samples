@@ -1,5 +1,6 @@
 {
-  "welcomeFile": "/helloworld/index.html",
+  "welcomeFile": "/hellopetter/index.html",
   "authenticationMethod": "none",
-  "routes": []
+  "routes": [
+  ]
 }
