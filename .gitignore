@@ -15,3 +15,4 @@ sap-btp-icon-collection/
 build
 */webapp/*
 */webapp/xs-app.json
+*.env*

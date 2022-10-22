@@ -8,14 +8,14 @@ import Usuario from "./Usuario";
 
 const Routes = () => {
    return(
-    <Router>
-    <BrowserRoute>
+    
+   <BrowserRoute>
       <Route index element={<Home />} />
+      <Route path="index.html" element={<Home />} />
       <Route path="sobre" element={<Sobre />} />
       <Route path="usuario" element={<Usuario />} />
       <Route path="*" element={<h1>NOT FOUND</h1>} />
-  </BrowserRoute>
-  </Router>
+   </BrowserRoute>
   
    )
 }
