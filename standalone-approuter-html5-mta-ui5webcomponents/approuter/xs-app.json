@@ -12,6 +12,13 @@
       "target": "myapp/$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa"
-    }
+    },
+    {
+      "source": "/planets",
+      "target": "myapp/$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    }     
+  
   ]
 }
