@@ -15,12 +15,13 @@ const Router = () => {
   return (
     <Suspense fallback={<BusyIndicator active />}>
       <Routes>
-        <Route path={ROUTES.PLANET_LIST}  element={<PlanetList />} />
+        <Route index path={ROUTES.PLANET_LIST}  element={<PlanetList />} />
+        <Route index path='/index.html'  element={<PlanetList />} />
         <Route path={ROUTES.RESIDENTS_LIST}  element={<ResidentsList />} />
         <Route path={ROUTES.BUGGY} element={<Buggy />} />
         <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
         <Route path={ROUTES.ANY} element={<NotFound />} />
-        <Route path={ROUTES.HOME} element={<Navigate to={ROUTES.PLANET_LIST} />} />
+        <Route index path={ROUTES.HOME} element={<Navigate to={ROUTES.PLANET_LIST} />} />
       </Routes>
     </Suspense>
   );

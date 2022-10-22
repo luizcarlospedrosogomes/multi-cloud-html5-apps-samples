@@ -13,9 +13,9 @@ modules:
       - name: html5_repo_runtime
       - name: html5_destination
       - name: html5_approuter-webcomp
-  - name: ui5webcomponents
+  - name: myapp
     type: html5
-    path: ui5webcomponents
+    path: my-app
     build-parameters:
       builder: custom
       commands:
@@ -32,8 +32,8 @@ modules:
       build-result: resources
       requires:
         - artifacts:
-            - ui5webcomponents.zip
-          name: ui5webcomponents
+            - myapp.zip
+          name: myapp
           target-path: resources/
 
 resources:

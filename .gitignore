@@ -16,3 +16,4 @@ build
 */webapp/*
 */webapp/xs-app.json
 *.env*
+standalone-approuter-html5-mta-ui5webcomponents/Makefile_20221022032924.mta

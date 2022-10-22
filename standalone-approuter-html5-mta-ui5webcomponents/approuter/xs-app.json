@@ -9,7 +9,7 @@
     },
     {
       "source": "(.*)",
-      "target": "ui5webcomponents/$1",
+      "target": "myapp/$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa"
     }

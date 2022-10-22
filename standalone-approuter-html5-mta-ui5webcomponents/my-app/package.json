@@ -22,7 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-react": "react-scripts build",
+    "build": "npm run clean && npm run build-react && npm run zip",
     "test": "react-scripts test --silent",
     "eject": "react-scripts eject",
     "start:mock-server": "nodemon --watch server --exec npx json-server --p 3001 server/mockserver.js --routes server/routes.json",
@@ -32,7 +33,9 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --config .prettierrc --check \"src/**/*.js\"",
     "prettier:fix": "prettier --config .prettierrc --write \"src/**/*.js\"",
-    "prepare": "husky install || exit 0"
+    "prepare": "husky install || exit 0",
+    "clean": "npx rimraf myapp.zip build",
+    "zip": "cd build/ && npx bestzip ../myapp.zip *"
   },
   "eslintConfig": {
     "extends": "react-app"
